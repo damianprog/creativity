@@ -1,3 +1,8 @@
+/* 
+    #4986fc light blue
+*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +14,11 @@ html, body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     font-family: "Poppins", sans-serif, Arial;
     font-weight: 400;
@@ -17,7 +27,7 @@ body {
 }
 
 header {
-    background: url("img/laptop-girl.jpg") no-repeat;
+    background: linear-gradient(45deg, rgba(94, 94, 94,0.1), rgba(94, 94, 94,0.1) 55%, #f048bb 150%), url("img/laptop-girl.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -31,23 +41,75 @@ header {
     box-sizing: content-box;
 }
 
-nav h1 {
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2 {
     display: inline-block;
     color: #fff;
     background: linear-gradient(135deg,#ce4be8,#207ce5);
     padding: 20px 20px 21px 20px;
 }
 
+nav ul li {
+    display: inline-block;
+    font-size: 94%;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 20px 18px;
+}
 
+nav ul li:first-child {
+    color: #4986fc;
+    transition: 0.2s;
+}
 
+nav ul li:first-child:hover {
+    color: #fff;
+}
 
+.header-content {
+    margin-top: 139px;
+    max-width: 610px;
+    color: #fff;
+}
 
+.header-content p:first-child {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255,0.8);
+    font-weight: 600;
+    font-size: 87%;
+    letter-spacing: 0.005em;
+}
 
+.header-content h1 {
+    font-size: 310%;
+    line-height: 121%;
+    margin: 3px 0 23px 0;
+    letter-spacing: 0.0045em;
+}
 
+.header-content-buttons {
+    margin-top: 22px;
+}
 
+.header-content-buttons a {
+    padding: 7px 14px;
+    border-radius: 4px;
+}
 
+.header-content-buttons a:first-child {
+    background: #4986fc;
+}
 
-
+.header-content-buttons a:nth-child(2) {
+    background: #fff;
+    color: #000;
+}
 
 
 
