@@ -23,15 +23,20 @@ body {
     font-family: "Poppins", sans-serif, Arial;
     font-weight: 400;
     font-size: 16px;
-    overflow-y: scroll;
 }
 
 header {
     background: linear-gradient(45deg, rgba(94, 94, 94,0.1), rgba(94, 94, 94,0.1) 55%, #f048bb 150%), url("img/laptop-girl.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
-    min-height: 677px;
+    margin-bottom: 400px;
+}
+
+header .wrapper {
+    position: relative;
+    height: 100%;
 }
 
 .wrapper {
@@ -45,9 +50,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 17px;
 }
 
-nav h2 {
+nav h1 {
     display: inline-block;
     color: #fff;
     background: linear-gradient(135deg,#ce4be8,#207ce5);
@@ -73,9 +79,12 @@ nav ul li:first-child:hover {
 }
 
 .header-content {
-    margin-top: 139px;
     max-width: 610px;
     color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header-content p:first-child {
@@ -86,7 +95,7 @@ nav ul li:first-child:hover {
     letter-spacing: 0.005em;
 }
 
-.header-content h1 {
+.header-content h2 {
     font-size: 310%;
     line-height: 121%;
     margin: 3px 0 23px 0;
@@ -111,11 +120,99 @@ nav ul li:first-child:hover {
     color: #000;
 }
 
+.header-content div:first-child {
+    margin-bottom: 154px;
+}
 
+.header-form {
+    background: #fff;
+    width: 446px;
+    position: absolute;
+    bottom: -40px;
+    right: 15px;
+    padding: 49px 49px 59px;
+    border-radius: 10px;
+    box-shadow: 0 15px 12px -10px rgba(0, 0, 0, 0.1);
+}
 
+.header-form p:first-child {
+    color: #4986fc;
+    font-size: 124%;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
 
+.header-form input {
+    width: 100%;
+    border-radius: 40px;
+    border: 1px solid rgba(0, 0, 0,0.1);
+    outline: none;
+    padding: 13px 20px;
+    font-size: 100%;
+    font-family: inherit;
+    margin-bottom: 30px;
+}
 
+.header-form input::placeholder {
+    color: #333;
+}
 
+.header-form input:focus {
+    border: 1px solid #4986fc;
+}
+
+.header-form div {
+    position: relative;
+}
+
+.header-form div label {
+    position: absolute;
+    background: #fff;
+    color: rgba(0, 0, 0,0.3);
+    top: -10px;
+    left: 28px;
+    font-weight: 500;
+    font-size: 87%;
+    padding: 0 6px;
+} 
+
+.send-button {
+    background: #4986fc;
+    padding: 11px 10px 2px 14px;
+    color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.header-form p:last-child {
+    color: #999;
+    margin-top: 30px;
+}
+
+.header-form p:last-child a {
+    color: #4986fc;
+}
+
+.header-form::after {
+    background: rgba(0, 0, 0, 0.05);
+    height: 145px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    border-radius: 50% 0 0 0;
+}
+
+.header-form-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-form-bottom a {
+    align-self: flex-end;
+}
 
 
 
