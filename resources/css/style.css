@@ -11,7 +11,6 @@
 
 html, body {
     width: 100%;
-    overflow-x: hidden;
 }
 
 a {
@@ -25,13 +24,26 @@ body {
     font-size: 16px;
 }
 
+section {
+    margin-top: 150px;
+}
+
 header {
-    background: linear-gradient(45deg, rgba(94, 94, 94,0.1), rgba(94, 94, 94,0.1) 55%, #f048bb 150%), url("img/laptop-girl.jpg");
+    background: linear-gradient(45deg, rgba(94, 94, 94,0.1), rgba(94, 94, 94,0.1) 55%, #f048bb 150%), url("img/laptop-girl.jpg") center;
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     height: 100vh;
-    margin-bottom: 400px;
+}
+
+h4 {
+    color: #4986fc;
+    font-weight: 600;
+}
+
+h3 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 213%;
+    font-weight: 600;
 }
 
 header .wrapper {
@@ -46,8 +58,11 @@ header .wrapper {
     box-sizing: content-box;
 }
 
-nav {
+nav, .header-content, .header-form-bottom {
     display: flex;
+}
+
+nav {
     align-items: center;
     justify-content: space-between;
     padding-right: 17px;
@@ -82,7 +97,6 @@ nav ul li:first-child:hover {
     max-width: 610px;
     color: #fff;
     height: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -205,7 +219,6 @@ nav ul li:first-child:hover {
 }
 
 .header-form-bottom {
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -214,13 +227,67 @@ nav ul li:first-child:hover {
     align-self: flex-end;
 }
 
+.categories .wrapper {
+    text-align: center;
+    margin-bottom: 400px;
+}
 
+.categories-images {
+    margin: 46px 0 82px 0;
+}
 
+.categories-images a {
+    display: inline-block;
+    width: 162px;
+    height: 162px;
+    border-radius: 100px;
+    color: #fff;
+    margin-right: 23px;
+}
 
+.categories-images a p {
+    font-weight: 400;
+    margin-top: 52px;
+    font-size: 124%;
+}
 
+.categories-images a span {
+    font-weight: 300;
+    font-size: 78%;
+}
 
+.categories-images a:first-child {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/cat1.jpg") center/cover;
+}
 
+.categories-images a:nth-child(2) {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/cat2.jpg") center/cover;
+}
 
+.categories-images a:nth-child(3) {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/cat3.jpg") center/cover;
+}
+
+.categories-images a:nth-child(4) {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/cat4.jpg") center/cover;
+}
+
+.categories-images a:nth-child(5) {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/cat5.jpg") center/cover;
+}
+
+.categories-images a:nth-child(6) {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/cat6.jpg") center/cover;
+    margin: 0;
+}
+
+.all-courses {
+    background: #e449ad;
+    color: #fff;
+    padding: 13px 15px;
+    margin-top: 82px;
+    border-radius: 5px;
+}
 
 
 
