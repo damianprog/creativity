@@ -1,5 +1,7 @@
 /* 
     #4986fc light blue
+
+    #f048bb pink
 */
 
 
@@ -22,10 +24,7 @@ body {
     font-family: "Poppins", sans-serif, Arial;
     font-weight: 400;
     font-size: 16px;
-}
-
-section {
-    margin-top: 150px;
+    color: #999;
 }
 
 header {
@@ -199,7 +198,6 @@ nav ul li:first-child:hover {
 }
 
 .header-form p:last-child {
-    color: #999;
     margin-top: 30px;
 }
 
@@ -227,9 +225,12 @@ nav ul li:first-child:hover {
     align-self: flex-end;
 }
 
-.categories .wrapper {
+.categories {
+    margin-top: 150px;
+}
+
+.categories .wrapper, .courses h3, .courses h4 {
     text-align: center;
-    margin-bottom: 400px;
 }
 
 .categories-images {
@@ -289,13 +290,70 @@ nav ul li:first-child:hover {
     border-radius: 5px;
 }
 
+.courses {
+    background: #f9faff;
+    padding: 120px 0 400px 0;
+    margin-top: 127px;
+}
 
+.courses-cards {
+    margin: 45px -30px 0 0;
+    font-weight: 500;
+}
 
+.courses-cards article {
+    background: #fff;
+    max-width: 350px;
+    margin-right: 30px;
+}
 
+.courses-cards article img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
 
+.course-card-img {
+    position: relative;
+    display: block;
+}
 
+.course-card-img span {
+    color: #fff;
+    background: #4986fc;
+    padding: 5px 9px;
+    position: absolute;
+    bottom: -8px;
+    left: 22px;
+}
 
+.course-card-content {
+    padding: 23px;
+    box-shadow: 0 10px 23px -8px rgba(0, 0, 0, 0.1);
+}
 
+.course-card-content a {
+    font-size: 131%;
+    color: #000;
+}
+
+.course-card-content p {
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 80%;
+}
+
+.course-card-content p span, .course-card-content div span:nth-child(2) {
+    color: #4986fc;
+}
+
+.course-card-content div {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 10px;
+}
 
 
 
