@@ -57,24 +57,24 @@ header .wrapper {
     box-sizing: content-box;
 }
 
-nav, .header-content, .header-form-bottom {
+.main-header nav, .header-content, .header-form-bottom {
     display: flex;
 }
 
-nav {
+.main-header nav {
     align-items: center;
     justify-content: space-between;
     padding-right: 17px;
 }
 
-nav h1 {
+.main-header nav h1 {
     display: inline-block;
     color: #fff;
     background: linear-gradient(135deg,#ce4be8,#207ce5);
     padding: 20px 20px 21px 20px;
 }
 
-nav ul li {
+.main-header nav ul li {
     display: inline-block;
     font-size: 94%;
     color: #fff;
@@ -83,12 +83,12 @@ nav ul li {
     padding: 20px 18px;
 }
 
-nav ul li:first-child {
+.main-header nav ul li:first-child {
     color: #4986fc;
     transition: 0.2s;
 }
 
-nav ul li:first-child:hover {
+.main-header nav ul li:first-child:hover {
     color: #fff;
 }
 
@@ -103,7 +103,7 @@ nav ul li:first-child:hover {
 .header-content p:first-child {
     text-transform: uppercase;
     color: rgba(255, 255, 255,0.8);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 87%;
     letter-spacing: 0.005em;
 }
@@ -286,13 +286,12 @@ nav ul li:first-child:hover {
     background: #e449ad;
     color: #fff;
     padding: 13px 15px;
-    margin-top: 82px;
     border-radius: 5px;
 }
 
 .courses {
     background: #f9faff;
-    padding: 120px 0 400px 0;
+    padding: 120px 0 112px 0;
     margin-top: 127px;
 }
 
@@ -356,6 +355,100 @@ nav ul li:first-child:hover {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     padding-top: 10px;
 }
+
+.statistics {
+    background: linear-gradient(135deg,rgba(206, 75, 232,0.8),rgba(32, 124, 229,0.8)), url("img/cat8.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.statistics .wrapper, .statistics-box {
+    display: flex;
+}
+
+.statistics .wrapper {
+    padding: 111px 15px;
+    justify-content: space-between;
+}
+
+.statistics i {
+    font-size: 311%;
+}   
+
+.statistics-box div span {
+    text-transform: uppercase;
+    font-size: 87%;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.statistics-box div {
+    margin-left: 24px;
+}
+
+.statistics-box {
+    align-items: center;
+}
+
+.statistics-box strong {
+    font-size: 200%;
+}
+
+.learning {
+    padding: 112px 0 400px 0;
+}
+
+.learning .wrapper {
+    display: flex;
+}
+
+.learning-photos {
+    position: relative;
+    flex: 0 0 540px;
+}
+
+.learning-photos figure {
+    border: 15px solid #fff;
+    box-shadow: 0 2px 12px -3px rgba(0, 0, 0, 0.1);
+}
+
+.learning-photos figure:first-child {
+    width: 378px;
+    height: 397px;
+    background: url("img/laptop-girl.jpg") top left/cover;
+    transform: scaleX(-1);
+}
+
+.learning-photos figure:nth-child(2) {
+    width: 324px;
+    height: 322px;
+    background: url("img/cat1.jpg") 39%/cover;
+    position: absolute;
+    bottom: -78px;
+    left: 209px;
+}
+
+.learning-info {
+    margin: 56px 0 0 64px;
+}
+
+.learning-info h3 {
+    line-height: 140%;
+}
+
+.learning-info p {
+    line-height: 180%;
+    margin: 24px 0 26px 0;
+}
+
+.learning-info a {
+    background: #4986fc;
+    color: #fff;
+    padding: 7px 14px;
+    border-radius: 5px;
+}
+
 
 
 
