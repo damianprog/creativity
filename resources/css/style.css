@@ -46,6 +46,8 @@ h3 {
     color: rgba(0, 0, 0, 0.8);
     font-size: 213%;
     font-weight: 600;
+    line-height: 140%;
+    margin-top: 6px;
 }
 
 header .wrapper {
@@ -465,17 +467,16 @@ header .wrapper {
     position: relative;
 }
 
-.testimonial h3 {
-    margin-top: 4px;
+.testimonial .background, .testimonial-posts, .testimonial-posts-slider, .testimonial-buttons {
+    position: absolute;
 }
 
 .testimonial .background {
     width: 50%;
     height: 100%;
-    position: absolute;
     right: 0;
     top: 0;
-    background: url(img/office-woman.webp) 57%/cover;
+    background: url(img/office-woman.webp) 51%/cover;
 }
 
 .testimonial-posts {
@@ -483,12 +484,10 @@ header .wrapper {
     height: 388px;
     margin-top: 61px;
     overflow: hidden;
-    position: absolute;
     right: 15px;
 }
 
 .testimonial-posts-slider {
-    position: absolute;
     transition: left 3000ms ease;
     left: 0;
 }
@@ -510,7 +509,7 @@ header .wrapper {
     color: #fc9927;
 }
 
-.testimonial-post-description {
+.testimonial-description {
     line-height: 180%;
     margin-top: 19px;
 }
@@ -543,9 +542,8 @@ header .wrapper {
 }
 
 .testimonial-buttons {
-    position: absolute;
     left: 0;
-    right: 30px;
+    right: 0;
     bottom: 0;
     text-align: center;
     font-size: inherit;
@@ -561,10 +559,138 @@ header .wrapper {
     color: #4986fc;
 }
 
+.enroll {
+    color: #fff;
+    margin-top: 112px;
+    text-align: center;
+}
 
+.enroll strong {
+    text-transform: uppercase;
+    font-size: 150%;
+}
 
+.enroll .wrapper {
+    background: linear-gradient(135deg,rgba(228, 73, 173,0.6),rgba(228, 73, 173,0.6)), url("img/cat8.jpg") no-repeat center;
+    background-size: cover;
+    padding: 48px 0 65px 0;
+}
 
+.enroll p {
+    margin: 9px 0 35px 0;
+}
 
+.enroll a {
+    background: #4986fc;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 25px;
+}
+
+.features {
+    margin-top: 112px;
+}
+
+.features .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-info {
+    flex: 0 0 507px;
+    padding-top: 64px;
+}
+
+.features-description {
+    line-height: 180%;
+    margin-top: 24px;
+}
+
+.features-description p {
+    margin-bottom: 15px;
+}
+
+.features-video a {
+    background: url("img/cat1_2.jpg") center/cover;
+}
+
+.features-video {
+    display: flex;
+    align-items: center;
+    padding-top: 9px;
+}
+
+.features-video a span {
+    font-size: 320%;
+    color: #4986fc;
+    padding: 24px 56px;
+}
+
+.features-video p, .features-box-title {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.features-video p {
+    margin: 0 0 8px 24px;
+    font-size: 112%;
+}
+
+.features-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: -30px;
+}
+
+.features-boxes article {
+    background: #fff;
+    padding: 48px 30px 30px 30px;
+    margin: 0 30px 30px 0;
+    max-width: 255px;
+    min-height: 295px;
+    box-shadow: 0 2px 25px -16px rgba(0,0,0,.26);
+    line-height: 170%;
+}
+
+.features-boxes article i {
+    font-size: 276%;
+    padding: 0 9px;
+    color: #fff;
+    border-radius: 100px;   
+}
+
+.features-box-title {
+    font-size: 112%;
+    font-weight: 500;
+    margin: 12px 0 17px 0;
+}
+
+.features-boxes article:first-child i {
+    background: #4986fc;
+}
+
+.features-boxes article:nth-child(2) i {
+    background: #e449ad;
+    padding: 0 7px 0 11px;
+}
+
+.features-boxes article:nth-child(3) i {
+    background: #fc9927;
+    font-size: 260%;
+    padding: 2px 7px 0 14px;
+}
+
+.features-boxes article:nth-child(4) i {
+    background: #24d2c8;
+    font-size: 245%;
+    padding: 6px 11px 0 12px;
+}
+
+.blog-posts {
+    background: #f9faff;
+    padding: 114px 0 153px 0;
+    margin: 103px 0 400px 0;
+}
 
 
 
