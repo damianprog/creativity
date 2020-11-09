@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 23/10/2020 15:55
+    Creation date: 06/11/2020 16:54
     */
 
     @font-face {
@@ -44,6 +44,9 @@
 .flaticon-quiz:before { content: "\f104"; }
 .flaticon-certificate:before { content: "\f105"; }
 .flaticon-star:before { content: "\f106"; }
+.flaticon-facebook:before { content: "\f107"; }
+.flaticon-twitter:before { content: "\f108"; }
+.flaticon-instagram:before { content: "\f109"; }
     
     $font-Flaticon-graduated: "\f100";
     $font-Flaticon-graduate: "\f101";
@@ -52,3 +55,6 @@
     $font-Flaticon-quiz: "\f104";
     $font-Flaticon-certificate: "\f105";
     $font-Flaticon-star: "\f106";
+    $font-Flaticon-facebook: "\f107";
+    $font-Flaticon-twitter: "\f108";
+    $font-Flaticon-instagram: "\f109";

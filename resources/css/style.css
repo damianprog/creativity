@@ -689,7 +689,7 @@ header .wrapper {
 .blog {
     background: #f9faff;
     padding: 114px 0 153px 0;
-    margin: 103px 0 400px 0;
+    margin-top: 103px;
 }
 
 .blog h3, .blog h4 {
@@ -767,6 +767,83 @@ header .wrapper {
     padding: 10px 17px;
     border-radius: 5px;
 }
+
+footer {
+    background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
+    padding-bottom: 136px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 103px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-content h5 {
+    color: #fff;
+    font-size: 112%;
+    font-weight: 600;
+}
+
+.footer-content-about h5, .footer-content-contact h5 {
+    margin-bottom: 39px;
+}
+
+.footer-content-list h5  {
+    margin-bottom: 50px;
+}
+
+.footer-content div {
+    flex: 0 0 238px;
+    padding-right: 15px;
+    line-height: 175%;
+}
+
+.footer-content-about-icons {
+    margin-top: 19px;
+}
+
+.footer-content-about-icons i {
+    color: #fff;
+    background: #24d2c8;
+    padding: 9px 12px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.footer-content-list a {
+    display: block;
+}
+
+.footer-content-list a, .footer-content-contact li {
+    padding-bottom: 17px;
+}
+
+.footer-content-about {
+    margin-right: 63px;
+}
+
+.footer-content-contact li {
+    display: flex;
+}
+
+.footer-content-contact i {
+    padding-right: 18px;
+    color: #24d2c8;
+}
+
+.footer-copyright {
+    margin-top: 65px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
 
 
 
