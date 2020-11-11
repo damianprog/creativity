@@ -56,10 +56,9 @@ header .wrapper {
 }
 
 .wrapper {
-    max-width: 1110px;
+    max-width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
-    box-sizing: content-box;
 }
 
 .testimonial-buttons span:nth-child(3), .testimonial-buttons span:nth-child(4),
@@ -130,8 +129,9 @@ header .wrapper {
 }
 
 .header-content-buttons a {
-    padding: 7px 14px;
+    padding: 8px 13px;
     border-radius: 4px;
+    margin-right: 1px;
 }
 
 .header-content-buttons a:first-child {
@@ -244,16 +244,16 @@ header .wrapper {
 }
 
 .categories-images {
+    display: flex;
+    justify-content: space-between;
     margin: 46px 0 82px 0;
 }
 
 .categories-images a {
-    display: inline-block;
-    width: 162px;
-    height: 162px;
+    width: 160px;
+    height: 160px;
     border-radius: 100px;
     color: #fff;
-    margin-right: 23px;
 }
 
 .categories-images a p {
@@ -295,7 +295,7 @@ header .wrapper {
 .all-courses-btn {
     background: #e449ad;
     color: #fff;
-    padding: 13px 15px;
+    padding: 6px 12px;
     border-radius: 5px;
 }
 
@@ -332,19 +332,38 @@ header .wrapper {
 .course-card-img span {
     color: #fff;
     background: #4986fc;
-    padding: 5px 9px;
+    padding: 4px 10px;
     position: absolute;
-    bottom: -8px;
     left: 22px;
+    bottom: -1px;
+}
+
+.course-card-img span::before, .course-card-img span::after {
+    content: '';
+    border-style: solid;
+    position: absolute;
+    bottom: 0;
+}
+
+.course-card-img span::before {
+    left: -8px;
+    border-width: 0 8px 8px 0;
+    border-color: transparent #0456f4 transparent transparent;
+}
+
+.course-card-img span::after {
+    right: -8px;
+    border-width: 0 0 8px 8px;
+    border-color: transparent transparent transparent #0456f4;
 }
 
 .course-card-content {
     padding: 23px;
-    box-shadow: 0 10px 23px -8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 26px -8px rgba(0, 0, 0, 0.1);
 }
 
 .course-card-content a {
-    font-size: 131%;
+    font-size: 127%;
     color: #000;
 }
 
@@ -364,6 +383,7 @@ header .wrapper {
     justify-content: space-between;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     padding-top: 10px;
+    color: #b3b3b3;
 }
 
 .statistics {
@@ -379,7 +399,7 @@ header .wrapper {
 
 .statistics .wrapper {
     padding: 111px 15px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .statistics i {
@@ -507,9 +527,10 @@ header .wrapper {
 
 .testimonial-posts-slider .flaticon-star {
     color: #fc9927;
+    font-size: 15px;
 }
 
-.testimonial-description {
+.testimonial-post-description {
     line-height: 180%;
     margin-top: 19px;
 }
@@ -578,6 +599,7 @@ header .wrapper {
 
 .enroll p {
     margin: 9px 0 35px 0;
+    color: rgba(255,255,255,.8);;
 }
 
 .enroll a {
@@ -645,8 +667,8 @@ header .wrapper {
 .features-boxes article {
     background: #fff;
     padding: 48px 30px 30px 30px;
-    margin: 0 30px 30px 0;
-    max-width: 255px;
+    margin: 0 30px 20px 0;
+    flex: 0 0 255px;
     min-height: 295px;
     box-shadow: 0 2px 25px -16px rgba(0,0,0,.26);
     line-height: 170%;
@@ -702,7 +724,7 @@ header .wrapper {
 }
 
 .blog-posts article {
-    flex: 0 0 350px;
+    flex-grow: 1;
     margin-right: 30px;
     background: #fff;
 }
@@ -771,13 +793,13 @@ header .wrapper {
 footer {
     background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
     padding-bottom: 136px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     padding-top: 103px;
-    color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-content h5 {
@@ -796,6 +818,7 @@ footer {
 
 .footer-content div {
     flex: 0 0 238px;
+    max-width: 238px;
     padding-right: 15px;
     line-height: 175%;
 }
@@ -835,11 +858,65 @@ footer {
 
 .footer-copyright {
     margin-top: 65px;
-    color: #fff;
     text-align: center;
 }
 
+@media (max-width: 1310px) {
+    .testimonial-posts {
+        width: 939px;
+    }
+}
 
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 960px;
+    }
+
+    .header-form {
+        width: 372px;
+    }
+
+    .header-content {
+        max-width: 542px;
+    }
+
+    .courses-cards article {
+        width: 290px;
+    }
+
+    .learning-photos figure:first-child {
+        background: url(img/laptop-girl.jpg) 11%/cover;
+        width: 315px;
+    }
+
+    .learning-photos figure:nth-child(2) {
+        background: url(img/cat1.jpg) 45%/cover;
+        width: 270px;
+        bottom: -48px;
+        left: 171px;
+    }
+
+    .learning-info {
+        margin: 56px 0 0 0;
+    }
+
+    .features-boxes article {
+        flex: 0 0 210px;
+    }
+
+    .features-info {
+        flex: 0 0 455px;
+    }
+
+    .footer-content div {
+        flex: 0 0 255px;
+        max-width: 225px;
+    }
+
+    .footer-content-about {
+        margin: 0;
+    }
+}
 
 
 
