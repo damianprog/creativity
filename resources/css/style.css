@@ -177,6 +177,7 @@ header .wrapper {
   padding: 8px 13px;
   border-radius: 4px;
   margin-right: 1px;
+  display: inline-block;
 }
 
 .header-content-buttons a:first-child {
@@ -658,7 +659,7 @@ header .wrapper {
   font-size: 150%;
 }
 
-.enroll .wrapper {
+.enroll .wrapper div {
   background: linear-gradient(
       135deg,
       rgba(228, 73, 173, 0.6),
@@ -666,8 +667,7 @@ header .wrapper {
     ),
     url('img/cat8.jpg') no-repeat center;
   background-size: cover;
-  max-width: 1110px;
-  padding: 48px 0 65px 0;
+  padding: 48px;
 }
 
 .enroll p {
@@ -680,6 +680,7 @@ header .wrapper {
   color: #fff;
   border-radius: 5px;
   padding: 18px 25px;
+  display: inline-block;
 }
 
 .features {
@@ -689,11 +690,11 @@ header .wrapper {
 .features .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .features-info {
   flex: 0 0 507px;
-  padding-top: 64px;
 }
 
 .features-description {
@@ -740,19 +741,19 @@ header .wrapper {
 
 .features-boxes article {
   background: #fff;
-  padding: 48px 30px 30px 30px;
+  padding: 30px;
   margin: 0 30px 20px 0;
   flex: 0 0 255px;
-  min-height: 295px;
   box-shadow: 0 2px 25px -16px rgba(0, 0, 0, 0.26);
   line-height: 170%;
 }
 
 .features-boxes article i {
   font-size: 276%;
-  padding: 0 9px;
+  padding: 16px 8px;
   color: #fff;
   border-radius: 100px;
+  display: inline-block;
 }
 
 .features-box-title {
@@ -767,19 +768,19 @@ header .wrapper {
 
 .features-boxes article:nth-child(2) i {
   background: #e449ad;
-  padding: 0 7px 0 11px;
+  padding: 16px 6px 16px 10px;
 }
 
 .features-boxes article:nth-child(3) i {
   background: #fc9927;
-  font-size: 260%;
-  padding: 2px 7px 0 14px;
+  font-size: 257%;
+  padding: 16px 7px 16px 12px;
 }
 
 .features-boxes article:nth-child(4) i {
   background: #24d2c8;
   font-size: 245%;
-  padding: 6px 11px 0 12px;
+  padding: 19px 10px 13px 11px;
 }
 
 .blog {
@@ -896,22 +897,18 @@ footer {
 }
 
 .footer-content div {
-  flex: 0 0 238px;
-  max-width: 238px;
+  flex: 1;
   padding-right: 15px;
   line-height: 175%;
-}
-
-.footer-content-about-icons {
-  margin-top: 19px;
 }
 
 .footer-content-about-icons i {
   color: #fff;
   background: #24d2c8;
-  padding: 9px 12px;
+  padding: 5px 12px;
+  display: inline-block;
   border-radius: 100px;
-  margin-right: 10px;
+  margin: 10px 10px 0 0;
 }
 
 .footer-content-list a {
@@ -923,8 +920,8 @@ footer {
   padding-bottom: 17px;
 }
 
-.footer-content-about {
-  margin-right: 63px;
+.footer-content-contact li:last-child div {
+  word-break: break-all;
 }
 
 .footer-content-contact li {
@@ -949,7 +946,7 @@ footer {
 
 @media (max-width: 1200px) {
   .wrapper {
-    width: 960px;
+    max-width: 960px;
   }
 
   .register-form {
@@ -986,11 +983,6 @@ footer {
 
   .features-info {
     flex: 0 0 455px;
-  }
-
-  .footer-content div {
-    flex: 0 0 255px;
-    max-width: 225px;
   }
 
   .footer-content-about {
@@ -1050,6 +1042,7 @@ footer {
 
   .header-content {
     max-width: 402px;
+    padding-top: 61px;
   }
 
   .header-content h2 {
@@ -1058,6 +1051,7 @@ footer {
 
   .register-form {
     max-width: 270px;
+    bottom: -80px;
   }
 
   .main-header .scrolled h1 {
@@ -1101,7 +1095,31 @@ footer {
   .testimonial-posts {
     width: auto;
     right: unset;
-    margin: 0 15px;
+    margin: 61px 15px 0 15px;
     position: relative;
+  }
+
+  .testimonial-buttons span:nth-child(3) {
+    display: inline-block;
+  }
+
+  .features-info {
+    flex: 0 0 297px;
+  }
+
+  .features-boxes article {
+    flex: 0 0 330px;
+  }
+
+  .features-video a span {
+    padding: 25px 21px;
+  }
+
+  .blog-posts {
+    flex-direction: column;
+  }
+
+  .blog-posts article {
+    margin-bottom: 40px;
   }
 }

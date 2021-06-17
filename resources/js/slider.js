@@ -27,7 +27,7 @@
 
     if (windowWidth <= 991) {
       const articleWidth =
-        windowWidth > 600
+        windowWidth > 767
           ? testimonialPosts.offsetWidth / 2 - 15
           : testimonialPosts.offsetWidth;
       style = `flex-basis: ${articleWidth}px`;
