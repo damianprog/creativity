@@ -13,11 +13,16 @@
 
 <body>
     <header class="main-header">
-        <div class="wrapper">
-            <nav>
-                <a href="#">
-                    <h1>StudyLab</h1>
-                </a>
+        <nav>
+            <div class="wrapper">
+                <div class="main-header-nav-top">
+                    <a href="#">
+                        <h1>StudyLab</h1>
+                    </a>
+                    <span>&#9776;</span>
+                </div>
+                
+                
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#"></a>About</a></li>
@@ -26,7 +31,9 @@
                     <li><a href="#"></a>Blog</a></li>
                     <li><a href="#"></a>Contact</a></li>
                 </ul>
-            </nav>
+            </div>
+        </nav>
+        <div class="wrapper">
             <div class="header-content">
                 <div>
                     <p>Welcome to Studylab</p>
@@ -38,7 +45,11 @@
                     </div>
                 </div>
             </div>
-            <div class="header-form">
+        </div>
+    </header>
+    <section class="register">
+        <div class="wrapper">
+            <div class="register-form">
                 <p>Register Now</p>
 
                 <div>
@@ -57,13 +68,13 @@
                     <label>Confirm Password</label>
                     <input type="text" placeholder="Confirm Password" />
                 </div>
-                <div class="header-form-bottom">
+                <div class="register-form-bottom">
                     <a href="#" class="send-btn"><span class="material-icons">send</span></a>
                     <p>Already have an account? <a href="#">Sign In</a></p>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
     <section class="categories">
         <div class="wrapper">
             <h4>Start Learning Today</h4>
@@ -379,7 +390,7 @@
                 <span class="material-icons">fiber_manual_record</span>
                 <span class="material-icons">fiber_manual_record</span>
             </div>
-        </div>
+    </div>
     </section>
     <section class="enroll">
         <div class="wrapper">
@@ -595,6 +606,8 @@
         </div>
     </footer>
 </body>
+<script type="text/javascript" src="resources/js/menu.js"></script>
+<script type="text/javascript" src="resources/js/sticky-nav.js"></script>
 <script type="text/javascript" src="resources/js/slider.js"></script>
 
 </html>
