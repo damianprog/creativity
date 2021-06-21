@@ -190,15 +190,15 @@ header .wrapper {
 }
 
 .register .wrapper {
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .register-form {
   background: #fff;
   width: 446px;
-  position: absolute;
-  bottom: -40px;
-  right: 15px;
+  position: relative;
+  margin-top: -557px;
   padding: 49px 49px 59px;
   border-radius: 10px;
   box-shadow: 0 15px 12px -10px rgba(0, 0, 0, 0.1);
@@ -282,7 +282,7 @@ header .wrapper {
 }
 
 .categories {
-  margin-top: 150px;
+  margin-top: 112px;
 }
 
 .categories .wrapper,
@@ -351,12 +351,13 @@ header .wrapper {
   color: #fff;
   padding: 6px 12px;
   border-radius: 5px;
+  display: inline-block;
 }
 
 .courses {
   background: #f9faff;
-  padding: 120px 0 112px 0;
-  margin-top: 127px;
+  padding: 120px 0 90px 0;
+  margin-top: 112px;
 }
 
 .courses-cards {
@@ -490,7 +491,7 @@ header .wrapper {
 }
 
 .learning {
-  padding-top: 112px;
+  margin-top: 112px;
 }
 
 .learning .wrapper {
@@ -519,12 +520,12 @@ header .wrapper {
   height: 322px;
   background: url('img/cat1.jpg') 39% / cover;
   position: absolute;
-  bottom: -78px;
-  left: 209px;
+  bottom: 0;
+  left: 210px;
 }
 
 .learning-info {
-  margin: 56px 0 0 64px;
+  padding: 57px 0 57px 68px;
 }
 
 .learning-info h3 {
@@ -541,18 +542,17 @@ header .wrapper {
   color: #fff;
   padding: 7px 14px;
   border-radius: 5px;
+  display: inline-block;
 }
 
 .testimonial {
   background: #f9faff;
-  height: 746px;
-  margin-top: 189px;
-  padding: 120px 0 400px 0;
+  margin-top: 112px;
+  padding: 120px 0;
   position: relative;
 }
 
 .testimonial .background,
-.testimonial-posts,
 .testimonial-posts-slider,
 .testimonial-buttons {
   position: absolute;
@@ -566,12 +566,18 @@ header .wrapper {
   background: url(img/office-woman.webp) 51% / cover;
 }
 
+.testimonial-posts-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
 .testimonial-posts {
-  width: 1262px;
+  flex-basis: 1262px;
+  position: relative;
   height: 388px;
   margin-top: 61px;
   overflow: hidden;
-  right: 15px;
 }
 
 .testimonial-posts-slider {
@@ -785,8 +791,8 @@ header .wrapper {
 
 .blog {
   background: #f9faff;
-  padding: 114px 0 153px 0;
-  margin-top: 103px;
+  padding: 120px 0;
+  margin-top: 112px;
 }
 
 .blog h3,
@@ -871,14 +877,13 @@ header .wrapper {
 
 footer {
   background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
-  padding-bottom: 136px;
+  padding: 120px 0;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
-  padding-top: 103px;
 }
 
 .footer-content h5 {
@@ -940,7 +945,7 @@ footer {
 
 @media (max-width: 1310px) {
   .testimonial-posts {
-    width: 939px;
+    flex-basis: 939px;
   }
 }
 
@@ -961,20 +966,25 @@ footer {
     width: 290px;
   }
 
+  .statistics-box div {
+    margin-left: 10px;
+  }
+
+  .learning-photos {
+    flex: 0 0 450px;
+  }
+
   .learning-photos figure:first-child {
-    background: url(img/laptop-girl.jpg) 11% / cover;
+    background: url(img/laptop-girl.jpg) 15% / cover;
     width: 315px;
+    height: 418px;
   }
 
   .learning-photos figure:last-child {
     background: url(img/cat1.jpg) 45% / cover;
     width: 270px;
-    bottom: -48px;
+    height: 338px;
     left: 171px;
-  }
-
-  .learning-info {
-    margin: 56px 0 0 0;
   }
 
   .features-boxes article {
@@ -997,7 +1007,7 @@ footer {
 
   .main-header nav {
     background: #000;
-    height: 61px;
+    height: 63px;
     transition: 0.4s height;
     overflow: hidden;
   }
@@ -1051,7 +1061,7 @@ footer {
 
   .register-form {
     max-width: 270px;
-    bottom: -80px;
+    margin-top: -486px;
   }
 
   .main-header .scrolled h1 {
@@ -1071,7 +1081,7 @@ footer {
   }
 
   .learning-photos {
-    flex: 0 0 390px;
+    flex: 0 0 330px;
   }
 
   .learning-photos figure:first-child {
@@ -1084,19 +1094,24 @@ footer {
     background: url(img/cat1.jpg) 45% / cover;
     width: 198px;
     height: 377px;
-    bottom: -77px;
     left: 132px;
+  }
+
+  .learning-info {
+    padding: 57px 0 57px 64px;
   }
 
   .testimonial .background {
     display: none;
   }
 
+  .testimonial-posts-wrapper {
+    margin-right: 0;
+  }
+
   .testimonial-posts {
-    width: auto;
-    right: unset;
     margin: 61px 15px 0 15px;
-    position: relative;
+    flex-basis: 100%;
   }
 
   .testimonial-buttons span:nth-child(3) {

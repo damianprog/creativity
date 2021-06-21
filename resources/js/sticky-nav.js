@@ -27,5 +27,5 @@ const throttle = (callback, time) => {
 };
 
 window.addEventListener('scroll', () => {
-  throttle(toggleSticky, 100);
+  toggleSticky();
 });
