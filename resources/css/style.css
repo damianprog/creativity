@@ -38,7 +38,7 @@ header {
     url('img/laptop-girl.jpg') center;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 610px;
+  min-height: 630px;
   height: 100vh;
 }
 
@@ -197,21 +197,24 @@ header .wrapper {
 .register-form {
   background: #fff;
   flex-basis: 446px;
+  margin-top: -537px;
   position: relative;
-  margin-top: -557px;
-  padding: 49px 49px 59px;
   border-radius: 10px;
   box-shadow: 0 15px 12px -10px rgba(0, 0, 0, 0.1);
 }
 
-.register-form p:first-child {
+.register-form-content {
+  padding: 49px 49px 0 49px;
+}
+
+.register-form-content p {
   color: #4986fc;
   font-size: 124%;
   font-weight: 500;
   margin-bottom: 24px;
 }
 
-.register-form input {
+.register-form-content input {
   width: 100%;
   border-radius: 40px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -222,11 +225,11 @@ header .wrapper {
   margin-bottom: 30px;
 }
 
-.register-form input::placeholder {
+.register-form-content input::placeholder {
   color: #333;
 }
 
-.register-form input:focus {
+.register-form-content input:focus {
   border: 1px solid #4986fc;
 }
 
@@ -234,7 +237,7 @@ header .wrapper {
   position: relative;
 }
 
-.register-form div label {
+.register-form-content div label {
   position: absolute;
   background: #fff;
   color: rgba(0, 0, 0, 0.3);
@@ -246,35 +249,33 @@ header .wrapper {
 }
 
 .send-btn {
+  position: absolute;
+  right: 49px;
+  top: -14px;
   background: #4986fc;
   padding: 11px 10px 2px 14px;
   color: #fff;
   border-radius: 10px;
   z-index: 1;
+  display: inline-block;
 }
 
-.register-form p:last-child {
-  margin-top: 30px;
+.register-form-actions p {
+  text-align: center;
 }
 
-.register-form p:last-child a {
+.register-form-actions p a {
   color: #4986fc;
 }
 
-.register-form::after {
+.register-form-actions {
   background: rgba(0, 0, 0, 0.05);
-  height: 145px;
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   content: '';
   border-radius: 50% 0 0 0;
-}
-
-.register-form-bottom {
-  flex-direction: column;
-  align-items: center;
+  padding: 51px 49px 65px 49px;
 }
 
 .register-form-bottom a {
