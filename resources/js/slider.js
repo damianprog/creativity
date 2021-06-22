@@ -10,7 +10,7 @@
   testimonialButtons.forEach((button, i) => {
     button.addEventListener('click', () => {
       testimonialPostsSlider.style.left = `calc(${i} * (-100% - 30px))`;
-      lastClickedButton.style.color = '#757575';
+      lastClickedButton.style.color = '#999';
       button.style.color = '#4986fc';
       lastClickedButton = button;
     });

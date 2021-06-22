@@ -196,7 +196,7 @@ header .wrapper {
 
 .register-form {
   background: #fff;
-  width: 446px;
+  flex-basis: 446px;
   position: relative;
   margin-top: -557px;
   padding: 49px 49px 59px;
@@ -369,7 +369,7 @@ header .wrapper {
 
 .courses-cards article {
   background: #fff;
-  max-width: 350px;
+  flex-basis: 350px;
   margin: 0 30px 30px 0;
 }
 
@@ -461,7 +461,7 @@ header .wrapper {
 }
 
 .statistics .wrapper {
-  padding: 111px 15px;
+  padding: 120px 15px 95px 15px;
   justify-content: space-around;
 }
 
@@ -521,7 +521,7 @@ header .wrapper {
   background: url('img/cat1.jpg') 39% / cover;
   position: absolute;
   bottom: 0;
-  left: 210px;
+  right: 0;
 }
 
 .learning-info {
@@ -749,7 +749,7 @@ header .wrapper {
   background: #fff;
   padding: 30px;
   margin: 0 30px 20px 0;
-  flex: 0 0 255px;
+  flex-basis: 255px;
   box-shadow: 0 2px 25px -16px rgba(0, 0, 0, 0.26);
   line-height: 170%;
 }
@@ -955,7 +955,7 @@ footer {
   }
 
   .register-form {
-    width: 372px;
+    flex-basis: 372px;
   }
 
   .header-content {
@@ -963,7 +963,7 @@ footer {
   }
 
   .courses-cards article {
-    width: 290px;
+    flex-basis: 290px;
   }
 
   .statistics-box div {
@@ -984,11 +984,10 @@ footer {
     background: url(img/cat1.jpg) 45% / cover;
     width: 270px;
     height: 338px;
-    left: 171px;
   }
 
   .features-boxes article {
-    flex: 0 0 210px;
+    flex-basis: 210px;
   }
 
   .features-info {
@@ -1060,7 +1059,7 @@ footer {
   }
 
   .register-form {
-    max-width: 270px;
+    flex-basis: 270px;
     margin-top: -486px;
   }
 
@@ -1077,7 +1076,7 @@ footer {
   }
 
   .courses-cards article {
-    width: 210px;
+    flex-basis: 210px;
   }
 
   .learning-photos {
@@ -1094,7 +1093,6 @@ footer {
     background: url(img/cat1.jpg) 45% / cover;
     width: 198px;
     height: 377px;
-    left: 132px;
   }
 
   .learning-info {
@@ -1123,7 +1121,7 @@ footer {
   }
 
   .features-boxes article {
-    flex: 0 0 330px;
+    flex-basis: 330px;
   }
 
   .features-video a span {
@@ -1136,5 +1134,119 @@ footer {
 
   .blog-posts article {
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  h3 {
+    font-size: 175%;
+  }
+
+  .wrapper {
+    max-width: 540px;
+  }
+
+  .header-content {
+    max-width: 100%;
+  }
+
+  .header-content h2 {
+    font-size: 187%;
+  }
+
+  .register {
+    margin-top: 112px;
+  }
+
+  .register .wrapper {
+    justify-content: flex-start;
+  }
+
+  .register-form {
+    flex-basis: 100%;
+    margin-top: 0;
+    box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+  }
+
+  .courses-cards article {
+    flex-basis: 100%;
+  }
+
+  .statistics .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .statistics-box {
+    width: 219px;
+    margin-bottom: 25px;
+  }
+
+  .learning .wrapper {
+    flex-direction: column;
+  }
+
+  .learning-photos {
+    height: 400px;
+    flex: none;
+  }
+
+  .learning-info {
+    padding: 48px 0 0 0;
+  }
+
+  .learning-photos figure:first-child {
+    background: url(img/laptop-girl.jpg) 11% / cover;
+    width: 70%;
+    height: 400px;
+  }
+
+  .learning-photos figure:last-child {
+    background: url(img/cat1.jpg) 45% / cover;
+    width: 60%;
+    height: 260px;
+  }
+
+  .testimonial-buttons span:nth-child(4),
+  .testimonial-buttons span:nth-child(5),
+  .testimonial-buttons span:nth-child(6) {
+    display: inline-block;
+  }
+
+  .enroll strong {
+    font-size: 125%;
+  }
+
+  .enroll .wrapper div {
+    padding: 32px 15px;
+  }
+
+  .features .wrapper {
+    flex-direction: column;
+  }
+
+  .features-boxes {
+    display: block;
+    margin-right: 0;
+  }
+
+  .features-boxes article {
+    margin: 20px 0;
+  }
+
+  .features-video a span {
+    padding: 24px 56px;
+  }
+
+  footer {
+    padding: 70px 0 120px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-content h5 {
+    margin: 50px 0 30px;
   }
 }
