@@ -129,8 +129,12 @@ header .wrapper {
   padding: 20px;
 }
 
+.main-header ul {
+  display: flex;
+  list-style-type: none;
+}
+
 .main-header ul li {
-  display: inline-block;
   font-size: 94%;
   font-weight: 500;
   cursor: pointer;
@@ -256,7 +260,6 @@ header .wrapper {
   padding: 11px 10px 2px 14px;
   color: #fff;
   border-radius: 10px;
-  z-index: 1;
   display: inline-block;
 }
 
@@ -270,16 +273,8 @@ header .wrapper {
 
 .register-form-actions {
   background: rgba(0, 0, 0, 0.05);
-  bottom: 0;
-  left: 0;
-  right: 0;
-  content: '';
   border-radius: 50% 0 0 0;
   padding: 51px 49px 65px 49px;
-}
-
-.register-form-bottom a {
-  align-self: flex-end;
 }
 
 .categories {
@@ -807,7 +802,6 @@ header .wrapper {
 }
 
 .blog-posts article {
-  flex-grow: 1;
   margin-right: 30px;
   background: #fff;
 }
@@ -1019,10 +1013,10 @@ footer {
   .main-header ul {
     width: 100%;
     padding-bottom: 13px;
+    flex-direction: column;
   }
 
   .main-header ul li {
-    display: block;
     padding: 7px 0;
   }
 
@@ -1037,8 +1031,7 @@ footer {
   }
 
   .main-header-nav-top span {
-    display: block;
-    text-transform: uppercase;
+    display: inline-block;
     cursor: pointer;
     user-select: none;
     font-size: 25px;
