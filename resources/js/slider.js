@@ -1,25 +1,60 @@
 (() => {
-  const testimonialPostsSlider = document.querySelector(
-    '.testimonial-posts-slider'
-  );
-  const testimonialButtons = document.querySelectorAll(
-    '.testimonial-buttons span'
-  );
-  let lastClickedButton = testimonialButtons[0];
+  let testimonialPostsSlider;
+  let testimonialButtons;
+  let lastClickedButton;
+  let testimonialPosts;
+  let testimonialPostsAricles;
+
+  const instantiateElements = () => {
+    testimonialPostsSlider = document.querySelector(
+      '.testimonial-posts-slider'
+    );
+    testimonialButtons = document.querySelectorAll(
+      '.testimonial-buttons span'
+    );
+
+    lastClickedButton = testimonialButtons[0];
+
+    testimonialPosts = document.querySelector('.testimonial-posts');
+    testimonialPostsAricles = document.querySelectorAll(
+      '.testimonial-posts article'
+    );
+  }
+
+  instantiateElements();
+
+  const mobileMedia = window.matchMedia('(max-width: 767px)');
+  const mediumMedia = window.matchMedia('(max-width: 991px)');
+
+  const resetSliderPosition = () => {
+    testimonialPostsSlider.style = '';
+    lastClickedButton.style.color = '#999';
+  }
+
+  mobileMedia.addEventListener('change', () => {
+    resetSliderPosition();
+  });
+
+  mediumMedia.addEventListener('change', () => {
+    resetSliderPosition();
+  });
+
+  const setActiveButton = (button) => {
+    lastClickedButton.style.color = '#999';
+    button.style.color = '#4986fc';
+    lastClickedButton = button;
+  }
+
+  const setSliderPosition = (multiplier) => {
+    testimonialPostsSlider.style.left = `calc(${multiplier} * (-100% - 30px))`;
+  }
 
   testimonialButtons.forEach((button, i) => {
     button.addEventListener('click', () => {
-      testimonialPostsSlider.style.left = `calc(${i} * (-100% - 30px))`;
-      lastClickedButton.style.color = '#999';
-      button.style.color = '#4986fc';
-      lastClickedButton = button;
+      setSliderPosition(i);
+      setActiveButton(button);
     });
   });
-
-  const testimonialPosts = document.querySelector('.testimonial-posts');
-  const testimonialPostsAricles = document.querySelectorAll(
-    '.testimonial-posts article'
-  );
 
   const setTestimonialItemsWidth = () => {
     let style = '';

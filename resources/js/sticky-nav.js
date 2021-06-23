@@ -14,18 +14,6 @@ const toggleSticky = () => {
   }
 };
 
-let throttleWait;
-const throttle = (callback, time) => {
-  if (throttleWait) return;
-
-  throttleWait = true;
-
-  setTimeout(() => {
-    callback();
-    throttleWait = false;
-  }, time);
-};
-
 window.addEventListener('scroll', () => {
   toggleSticky();
 });
