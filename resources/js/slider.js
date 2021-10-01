@@ -9,9 +9,7 @@
     testimonialPostsSlider = document.querySelector(
       '.testimonial-posts-slider'
     );
-    testimonialButtons = document.querySelectorAll(
-      '.testimonial-buttons span'
-    );
+    testimonialButtons = document.querySelectorAll('.testimonial-buttons span');
 
     lastClickedButton = testimonialButtons[0];
 
@@ -19,7 +17,7 @@
     testimonialPostsAricles = document.querySelectorAll(
       '.testimonial-posts article'
     );
-  }
+  };
 
   instantiateElements();
 
@@ -28,8 +26,8 @@
 
   const resetSliderPosition = () => {
     testimonialPostsSlider.style = '';
-    lastClickedButton.style.color = '#999';
-  }
+    setActiveButton(testimonialButtons[0]);
+  };
 
   mobileMedia.addEventListener('change', () => {
     resetSliderPosition();
@@ -43,11 +41,11 @@
     lastClickedButton.style.color = '#999';
     button.style.color = '#4986fc';
     lastClickedButton = button;
-  }
+  };
 
   const setSliderPosition = (multiplier) => {
     testimonialPostsSlider.style.left = `calc(${multiplier} * (-100% - 30px))`;
-  }
+  };
 
   testimonialButtons.forEach((button, i) => {
     button.addEventListener('click', () => {
